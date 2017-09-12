@@ -1705,7 +1705,6 @@
 
 	#banner {
 		position: relative;
-		text-transform: uppercase;
 	}
 
 		#banner p {
@@ -1955,38 +1954,15 @@
 		/* Banner */
 
 			#banner {
-				padding: 10em 0 10em 0;
+				padding: 3em 0 3em 0;
 			}
 
 				#banner p {
-					font-size: 2em;
-					line-height: 1.5em;
-					letter-spacing: 4px;
+					font-size: 1.1em;
+					line-height: 1.2em;
+					letter-spacing: 2px;
 				}
 
-				#banner:before, #banner:after {
-					content: '';
-					display: block;
-					position: absolute;
-					top: 50%;
-					width: 35px;
-					height: 141px;
-					margin-top: -70px;
-					background: url("images/bracket.svg");
-					opacity: 0.15;
-				}
-
-				#banner:before {
-					left: 0;
-				}
-
-				#banner:after {
-					-moz-transform: scaleX(-1);
-					-webkit-transform: scaleX(-1);
-					-ms-transform: scaleX(-1);
-					transform: scaleX(-1);
-					right: 0;
-				}
 
 		/* Content */
 
