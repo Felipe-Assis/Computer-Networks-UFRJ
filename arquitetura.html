@@ -41,13 +41,13 @@
 												<li><a href="#">Kernel</a></li>
 												<li><a href="#">CloudDB</a></li>
 											</ul></li>
-									<li><a class="icon fa fa-cloud" href="#"><span>Redes Apache</span></a>
+									<li><a class="icon fa fa-cloud" href="redes.html"><span>Redes Apache</span></a>
 											<ul>
 												<li><a href="#">Tipos de Redes</a></li>
 												<li><a href="#">Roteador Virtual</a></li>
 												<li><a href="#">Rede na Nuvem</a></li>
 											</ul></li>
-									<li><a class="icon fa fa-desktop" href="#"><span>IaaS</span></a>
+									<li><a class="icon fa fa-desktop" href="services.html"><span>Serviços</span></a>
 											<ul>
 												<li><a href="#">Tipos de Serviços</a></li>
 												<li><a href="#">Big Data e Cloud</a></li>
@@ -73,11 +73,27 @@
 							<div id="content">
 								<!-- Post -->
 									<article class="box post">
+										<div id = "infraestrutura">
 										<h2>Camada de Infraestrutura</h2>
 										<p>
-										...
+										A Camada de Infraestrutura é a camada base e compreende todos os recursos de <i>hardware</i> sobre quais tecnologias de inforamação são construídas. Isto é, incluem recursos de computação, armazenamento, redes e assim por diante.
+										</p>
+										</div>
+
+										<br>
+										<br>
+
+										<h2>Armazenamento</h2>
+										<p>
+										CloudStack tem duas principais categorias de armazenamento, primário e secundário. Armazenamento primário é usado para fornecer discos para máquinas virtuais hóspedes e está associado ao o cluster do CloudStack Já o armazenamento secundário está associado a um setor, comum a todos os 
+										<a href="#" onclick="window.open('glosario.html#PoD', 'newwindow', 'width=400, height=300'); return false;">pontos de entrega (PoDs)</a>
+										 no setor e é usado para armazenar templates, ISOs e snapshots dos volumes dos discos.
+										<br><br>
+										<b>Armazenamento primário:</b><br>
+										Armazenamento primário (primary storage) no CloudStack, como visto anteriormente. é comum a um cluster e é usado para fornecer discos a máquinas virtuais hóspedes. Em outras palavras, todas máquinas virtuais em todos os hospedeiros de um cluster tem seus próprios volumes raiz. Podem haver diversos armazenamentos primários adicionados a um cluster com diferentes tags de armazenamento primário e as máquinas virtuais hóspedes tem unidades de disco alocadadas destes armazenamentos primários
 										</p>
 
+										<br>
 										<br>
 
 										<h2>Camada de Gerenciamento</h2>
@@ -85,10 +101,16 @@
 										...
 										</p>
 
+										<br>
+										<br>
+
 										<h2>Kernel</h2>
 										<p>
 										...
 										</p>
+
+										<br>
+										<br>
 
 										<h2>Cloud DB</h2>
 										<p>
