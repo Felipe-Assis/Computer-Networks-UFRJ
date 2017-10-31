@@ -121,7 +121,7 @@
 										<p>
 										Apesar de toda a conversa a respeito das nuvens poucas pessoas parecem realmente ter certeza do que elas são de fato. O Insituto Nacional de Padrões e Tecnologia, sempre uma boa fonte com que conta, lista cinco características essenciais:<br><br>
 										<b>1. Serviço automático de acordo com a demanda.</b><br> Usuários devem ser capazes de abastercer-se de recursos automaticamente, sem exigir a interação humana.<br><br>
-										<b>2. Acesso amplo pela rede.</b><br> Todos esses recursos devem estar diponíveis na rede por mecanismos padronizados de maneira que dispositivos heterogêneos poassam fazer uso deles.<br><br>
+										<b>2. Acesso amplo pela rede.</b><br> Todos esses recursos devem estar disponíveis na rede por mecanismos padronizados de maneira que dispositivos heterogêneos poassam fazer uso deles.<br><br>
 										<b>3. Pooling de recursos.</b><br> O recurso de computação de propriedade do provedor deve ser colocado à capacidade de alocar e realocar os recursos dinamicamente. Os usuários em geral não sabem nem a localização exata dos "seus" recursos ou mesmo em que país eles estão.<br><br>
 										<b>4. Elasticidade rápida.</b><br> Deveria ser possível adquirir e liberar recursos elasticamente, talvez até automaticamente, de modo a escalar de imediato com as demandas do usuário.<br><br>
 										<b>5. Serviço mensurado.</b><br> O provedor da nuvem mensura os recursos usados de uma maneira que cas com o tipo de serviço acordado.<br>
@@ -143,7 +143,32 @@
 
 										<h2>O que é Apache CloudStack?</h2>
 										<p>
-										Apache CloudStack é um projeto de alto nível da <i>Apache Software Foundation (ASF)</i>. O projeto desenvolve software aberto para implementação de nuvens <i>Infrasctructure-as-a-Service (IaaS)</i> públicas e privadas.
+										Apache CloudStack é uma plataforma de Infraestrutura como Serviço aberta que gerencia e orquestra grupos de armazenamento, rede e recursos computacionais para construir nuvens  <i>Infrasctructure-as-a-Service (IaaS)</i> públicas ou privadas.
+										</p>
+
+										<br>
+
+										<h2>O que Apache CloudStack é capaz de fazer?</h2>
+										<p>
+										<b>Suporte a múltiplos hipervisores</b><br>
+										CloudStack trabalha com uma variedade de hypervisores e tecnologias afim. Uma única nuvem pode conter múltiplas implementações de hipervisores. CloudStack suporta:<br>
+										- BareMetal (via IPMI)<br>
+										- Hyper-V<br>
+										- KVM<br>
+										- LXC<br>
+										- vSphere (via vCenter)<br>
+										- Xenserver<br>
+										- Xen Project
+										<br>
+										<br>
+										<b>Gerenciamento de Infraestrutura escalável</b><br>
+										CloudStack pode gerenciar dezenas de milhares de servidores físicos instalados em datacenters geograficamente distribuídos. A escalabilidade do servidor de gerenciamento é quase linear, o que elimina a necessidade de gerenciamento de servidores a nível de cluster. Manutenção ou outras interrumpções do servidor de gerenciamento podem ocorrer sem afetar as máquinas virtuais rodando na nuvem.
+										<br>
+										<br>
+										<b>Gerenciamento de Configuração Automático da Nuvem</b><br>
+										CloudStack automaticamente define as configurações de armazenamento e rede para cada instância de máquina virtual. Internamente, um conjunto de ferramentas virtuais oferecem serviços como firewall, DHCP, VPN, proxy, acesso e replicação de armazenamento.
+
+
 										</p>
 									</article>
 							</div>

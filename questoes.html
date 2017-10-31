@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Redes - CloudStack</title>
+		<title>Questões - CloudStack</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -21,7 +21,7 @@
 					<div id="header" class="container">
 
 						<!-- Logo -->
-							<h1 id="logo">Redes</a></h1>
+							<h1 id="logo">Questões</a></h1>
 
 
 						<!-- Nav -->
@@ -76,28 +76,7 @@
 										<div id = "infraestrutura">
 										<h2>Tipos de Redes</h2>
 										<p>
-
-										CloudStack oferece diversos tipos de redes que recaem tipicamente em um destes dois cenários:<br>
-										<b>- Básico:</b> Similar ao estilo clássico de rede da AWS. Fornece uma única rede de camada-2 em que isolamento de hóspede é fornecido na camada-3 através de dispositivo que conecta hypervisores.<br>
-
-										<b>- Avançado:</b> Tipicamente usa isolamento da camada-2 como VLANS. Também inclui tecnologias SDN como Nicira NVP..<br>
-										<br>
-										<br>
-										<b>Rede Física:</b><br>
-										Uma zona na aplicação CloudStack pode ser associada com uma o mais redes físicas. 
-										Uma zona pode utilizar tanto a configuração de rede básica quanto avançaca, que irá por sua vez, decidir o tipo de tráfego que fluirá através das redes físicas.
-										Em uma zona como configuração de rede básica, apenas uma rede física pode estar presente em dado momento.<br>
-										<br>
-										<b>Rede Virtual:</b><br>
-										A fim de permitir alocações múltiplas em uma única rede física, é necessário dividí-la em múltiplas unidades lógicas. Assim, cada construção lógica passa a ser denominada rede virtual.
-										As informações e configurações das redes virtuais ficam armazenadas e são colocadas em prática somente quando a primeira máquina virtual é iniciada e atribuída a tal rede. De forma análoga, a rede virtual é deletada quando todas as máquinas virtuais são removidas da rede, o que é extremamente importante para preservar os recursos e reduzir desperdício.
-										A rede virtual pode ser compartilhada ou isolada:<br>
-										<b>-Redes isoladas:</b>
-										Estas redes podem ser acessadas apenas em máquinas virtuais de uma única conta com a excessão de administradores do domínio.
-										Recursos como VLAN são alocadados para estes tipos de rede e o garbage collector atua dinamicamente.
-										<br>
-										<b>-Redes compartilhadas:</b>
-										Podem ser acessadas por máquinas virtuais de contas distintas. Estes tipos de rede são criados pelo administrador que pode, ainda, designar uma rede compartilhada a determinado domínio. Também fica sob responsabilidade do administrador designar os recursos de rede como VLAN e a rede física a qual a rede compartilhada é mapeada.<br>
+										...
 										</p>
 										</div>
 
@@ -106,23 +85,19 @@
 
 										<h2>Roteador Virtual</h2>
 										<p>
-										Roteadores virtuais são implantados nas redes do tipo básico onde é utilizado um tipo de serviço de serviço compartilhado entre múltiplos inquilinos e fornecem funcionalidades como DHCP, DNS e assim por diante. Por padrão, apenas um roteador virtual pode estar ativo por rede.
-										Um roteador virtual tem três placas de interface de rede:
-										-Uma conectada a rede de hóspede isolada utilizada para VLAN avançada a qual é atribuída o primeiro IP do intervalo CIDR que também atuará como DHCP, DNS e porta de entrada para instâncias na rede de hóspede privada.
-										-A segunda placa da interface de rede é usada para rede de enlaces locais (apenas para KVM e XenServer).
-										-A terceira reside na rede pública e tem um IP público atribuído que é utilizado para fornecer serviços NAT para as máquinas virtuais hóspedes conectadas a ela.
+										...
 										</p>
 
 										<br>
 										<br>
 
-<!-- 										<h2>Rede na Nuvem</h2>
+										<h2>Rede na Nuvem</h2>
 										<p>
 										...
 										</p>
 
 										<br>
-										<br> -->
+										<br>
 									</article>
 
 

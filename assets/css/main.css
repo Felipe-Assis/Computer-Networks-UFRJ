@@ -1164,7 +1164,7 @@
 	}
 
 	p {
-		text-align: center;
+		text-align: left;
 		margin-bottom: .5em;
 	}
 
@@ -1598,6 +1598,10 @@
 		background: #FAFDFF;
 	}
 		#main-wrapper p{
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+			border-left: 1px dotted black;
+			border-right: 1px dotted black;
 			border-radius: 10px;
 			background-color: #e0e0e0;
 		}
