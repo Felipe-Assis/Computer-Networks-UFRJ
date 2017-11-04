@@ -31,31 +31,38 @@
 									<li>
 									<li><a class="icon fa-home" href="index.html"><span>Introdução</span></a>
 										<ul>
-											<li><a href="#">História Virtualização e Nuvem</a></li>
-											<li><a href="#">O​ ​que​ ​é​ ​Apache​ ​CloudStack?</a></li>
+											<li><a href="index.html#oqueenuvem">O​ ​que​ ​é​ ​Nuvem?</a></li>
+											<li><a href="index.html#nuvemdatacenter">Nuvem e Datacenter Virtualizado?</a></li>
+											<li><a href="index.html#oqueecloudstack">O​ ​que​ ​é​ ​Apache​ ​CloudStack?</a></li>
+											<li><a href="index.html#oquecloudstack">O​ ​que​ ​Apache​ ​CloudStack é capaz de fazer?</a></li>
 										</ul>
 									</li>
 									<li><a class="icon fa-cogs" href="arquitetura.html"><span>Arquitetura</span></a>
 											<ul>
-												<li><a href="#">Camada​ ​de​ ​Infraestrutura</a></li>
-												<li><a href="#">Camada​ ​de​ ​Gerenciamento</a></li>
-												<li><a href="#">Kernel</a></li>
-												<li><a href="#">CloudDB</a></li>
+												<li><a href="arquitetura.html#infraestrutura">Camada​ ​de​ ​Infraestrutura</a></li>
+												<li><a href="arquitetura.html#armazenamento">Armazenamento</a></li>
+												<li><a href="arquitetura.html#gerenciamento">Camada​ ​de​ ​Gerenciamento</a></li>
+												<li><a href="arquitetura.html#kernel">Kernel</a></li>
+												<li><a href="arquitetura.html#clouddb">CloudDB</a></li>
 											</ul></li>
 									<li><a class="icon fa fa-cloud" href="redes.html"><span>Redes Apache</span></a>
 											<ul>
-												<li><a href="#">Tipos de Redes</a></li>
-												<li><a href="#">Roteador Virtual</a></li>
-												<li><a href="#">Rede na Nuvem</a></li>
+												<li><a href="redes.html#tiporede">Rede Física e Virtual</a></li>
+												<li><a href="redes.html#roteadorvirtual">Roteador Virtual</a></li>
 											</ul></li>
-									<li><a class="icon fa fa-desktop" href="services.html"><span>Serviços</span></a>
+									<li><a class="icon fa fa-desktop" href="aplicacoes.html"><span>Aplicações</span></a>
 											<ul>
-												<li><a href="#">Tipos de Serviços</a></li>
-												<li><a href="#">Big Data e Cloud</a></li>
-												<li><a href="#">Usuários CloudStack</a></li>
-												<li><a href="#">Comparação entre plataformas</a></li> 
+												<li><a href="aplicacoes.html#tiposervico">Tipos de Serviços</a></li>
+												<li><a href="aplicacoes.html#mineracao">Mineração de Grandes Volumes de Dados</a></li>
+												<li><a href="aplicacoes.html#bigcloud">Big Data e Cloud</a></li>
+												<li><a href="aplicacoes.html#consolidacao">Consolidação de Máquinas Virtuais</a></li>
+												<li><a href="aplicacoes.html#usuarios">Usuários CloudStack</a></li>
 											</ul></li>
-									<li><a class="icon 	fa fa-users" href="#"><span>Questões</span></a></li>
+									<li><a class="icon 	fa fa-users" href="questoes.html"><span>Extra</span></a>
+											<ul>
+												<li><a href="questoes.html#perguntas">Questões</a></li>
+												<li><a href="glossario.html">Glossário</a></li>
+											</ul></li>
 									<li><a class="icon 	fa fa-book" href="bibliografia.html"><span>Bibliografia</span></a></li>
 									</li>
 								</ul>
@@ -110,16 +117,11 @@
 							<div id="content">
 								<!-- Post -->
 									<article class="box post">
-										<h2>História Virtualização e Nuvem</h2>
-										<p>
-										...
-										</p>
-
-										<br>
-
+									<div id="oqueenuvem">
 										<h2>O que é Nuvem?</h2>
 										<p>
 										Apesar de toda a conversa a respeito das nuvens poucas pessoas parecem realmente ter certeza do que elas são de fato. O Insituto Nacional de Padrões e Tecnologia, sempre uma boa fonte com que conta, lista cinco características essenciais:<br><br>
+										<br>
 										<b>1. Serviço automático de acordo com a demanda.</b><br> Usuários devem ser capazes de abastercer-se de recursos automaticamente, sem exigir a interação humana.<br><br>
 										<b>2. Acesso amplo pela rede.</b><br> Todos esses recursos devem estar disponíveis na rede por mecanismos padronizados de maneira que dispositivos heterogêneos poassam fazer uso deles.<br><br>
 										<b>3. Pooling de recursos.</b><br> O recurso de computação de propriedade do provedor deve ser colocado à capacidade de alocar e realocar os recursos dinamicamente. Os usuários em geral não sabem nem a localização exata dos "seus" recursos ou mesmo em que país eles estão.<br><br>
@@ -127,9 +129,12 @@
 										<b>5. Serviço mensurado.</b><br> O provedor da nuvem mensura os recursos usados de uma maneira que cas com o tipo de serviço acordado.<br>
 										<i>Definição extraída de Sistemas Operacionais Modernos; Andrew S.Tannenbaum</i>
 										</p>
+									</div>
 
 										<br>
+										<br>
 
+									<div id="nuvemdatacenter">
 										<h2>Nuvem e Datacenter virtualizado</h2>
 										<p>
 										<b>1.</b> A nuvem é a evolução da virtualização dos datacenters. O que caracteriza esta diferença é a existência de uma camada de serviço acima da camada de virtualização. Ao invés de apenas recursos computacionais, serviços são construídos sobre as plataformas de virtualização e oferecidas aos usuários.
@@ -138,16 +143,23 @@
 										<br><br>
 										<b>3.</b> Métricas e pagamento são características essenciais de qualquer ambiente em nuvem já que eles controlam o uso dos recursos de TI.
 										</p>
+									</div>
 
 										<br>
+										<br>
 
+									<div id="oqueecloudstack">
 										<h2>O que é Apache CloudStack?</h2>
 										<p>
 										Apache CloudStack é uma plataforma de Infraestrutura como Serviço aberta que gerencia e orquestra grupos de armazenamento, rede e recursos computacionais para construir nuvens  <i>Infrasctructure-as-a-Service (IaaS)</i> públicas ou privadas.
+										<a class="image centered"><img src="images/logo.png"></a>
+									    <i>Figura 1: Logo do Apache CloudStack</i>
 										</p>
 
 										<br>
+										<br>
 
+									<div id="oquecloudstack">
 										<h2>O que Apache CloudStack é capaz de fazer?</h2>
 										<p>
 										<b>Suporte a múltiplos hipervisores</b><br>
@@ -167,9 +179,8 @@
 										<br>
 										<b>Gerenciamento de Configuração Automático da Nuvem</b><br>
 										CloudStack automaticamente define as configurações de armazenamento e rede para cada instância de máquina virtual. Internamente, um conjunto de ferramentas virtuais oferecem serviços como firewall, DHCP, VPN, proxy, acesso e replicação de armazenamento.
-
-
 										</p>
+									</div>
 									</article>
 							</div>
 
@@ -180,6 +191,10 @@
 							<li><a href="index.html" class="button icon fa-file">Ir para o topo</a></li>
 						</ul>
 					<ul class="links">
+						<li>Universidade Federal do Rio de Janeiro</li>
+						<li>Redes de Computadores II - EEL879 / 2017-2</li>
+						<li>Felipe Assis de Souza</li>
+						<br>
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>

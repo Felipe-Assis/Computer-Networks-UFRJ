@@ -30,37 +30,45 @@
 									<li>
 									<li><a class="icon fa-home" href="index.html"><span>Introdução</span></a>
 										<ul>
-											<li><a href="#">História Virtualização e Nuvem</a></li>
-											<li><a href="#">O​ ​que​ ​é​ ​Apache​ ​CloudStack?</a></li>
+											<li><a href="index.html#oqueenuvem">O​ ​que​ ​é​ ​Nuvem?</a></li>
+											<li><a href="index.html#nuvemdatacenter">Nuvem e Datacenter Virtualizado?</a></li>
+											<li><a href="index.html#oqueecloudstack">O​ ​que​ ​é​ ​Apache​ ​CloudStack?</a></li>
+											<li><a href="index.html#oquecloudstack">O​ ​que​ ​Apache​ ​CloudStack é capaz de fazer?</a></li>
 										</ul>
 									</li>
 									<li><a class="icon fa-cogs" href="arquitetura.html"><span>Arquitetura</span></a>
 											<ul>
-												<li><a href="#">Camada​ ​de​ ​Infraestrutura</a></li>
-												<li><a href="#">Camada​ ​de​ ​Gerenciamento</a></li>
-												<li><a href="#">Kernel</a></li>
-												<li><a href="#">CloudDB</a></li>
+												<li><a href="arquitetura.html#infraestrutura">Camada​ ​de​ ​Infraestrutura</a></li>
+												<li><a href="arquitetura.html#armazenamento">Armazenamento</a></li>
+												<li><a href="arquitetura.html#gerenciamento">Camada​ ​de​ ​Gerenciamento</a></li>
+												<li><a href="arquitetura.html#kernel">Kernel</a></li>
+												<li><a href="arquitetura.html#clouddb">CloudDB</a></li>
 											</ul></li>
 									<li><a class="icon fa fa-cloud" href="redes.html"><span>Redes Apache</span></a>
 											<ul>
-												<li><a href="#">Tipos de Redes</a></li>
-												<li><a href="#">Roteador Virtual</a></li>
-												<li><a href="#">Rede na Nuvem</a></li>
+												<li><a href="redes.html#tiporede">Rede Física e Virtual</a></li>
+												<li><a href="redes.html#roteadorvirtual">Roteador Virtual</a></li>
 											</ul></li>
-									<li><a class="icon fa fa-desktop" href="services.html"><span>Serviços</span></a>
+									<li><a class="icon fa fa-desktop" href="aplicacoes.html"><span>Aplicações</span></a>
 											<ul>
-												<li><a href="#">Tipos de Serviços</a></li>
-												<li><a href="#">Big Data e Cloud</a></li>
-												<li><a href="#">Usuários CloudStack</a></li>
-												<li><a href="#">Comparação entre plataformas</a></li> 
+												<li><a href="aplicacoes.html#tiposervico">Tipos de Serviços</a></li>
+												<li><a href="aplicacoes.html#mineracao">Mineração de Grandes Volumes de Dados</a></li>
+												<li><a href="aplicacoes.html#bigcloud">Big Data e Cloud</a></li>
+												<li><a href="aplicacoes.html#consolidacao">Consolidação de Máquinas Virtuais</a></li>
+												<li><a href="aplicacoes.html#usuarios">Usuários CloudStack</a></li>
 											</ul></li>
-									<li><a class="icon 	fa fa-users" href="#"><span>Questões</span></a></li>
+									<li><a class="icon 	fa fa-users" href="questoes.html"><span>Extra</span></a>
+											<ul>
+												<li><a href="questoes.html#perguntas">Questões</a></li>
+												<li><a href="glossario.html">Glossário</a></li>
+											</ul></li>
 									<li><a class="icon 	fa fa-book" href="bibliografia.html"><span>Bibliografia</span></a></li>
 									</li>
 								</ul>
 							</nav>
-						</div>
+
 					</div>
+				</div>
 
 
 
@@ -73,12 +81,12 @@
 							<div id="content">
 								<!-- Post -->
 									<article class="box post">
-										<div id = "infraestrutura">
+									<div id = "infraestrutura">
 										<h2>Camada de Infraestrutura</h2>
 										<p>
 										A Camada de Infraestrutura é a camada base e compreende todos os recursos de <i>hardware</i> sobre quais tecnologias de inforamação são construídas. Isto é, incluem recursos de computação, armazenamento, redes e assim por diante.<br>
 										<br>
-										<br>
+										<a class="image centered"><img src="images/1.png"></a>
 										<b>Regiões:</b><br>
 										Uma região é a maior unidade organizacional disponível dentro de uma aplicação CloudStack. Uma região é constituída de diversas zonas disponíveis, onde cada zona é aproximadamente equivalente a um datacenter. Cada região é controlada por seu próprio cluster de Servidores de Gerenciamento, operando em uma das zonas. 
 										A nuvem pode alcançar maior escalabilidade e disponibilidade agrupando zonas em regiões. <br>
@@ -94,15 +102,16 @@
 										Um cluster é o terceiro nível da divisão hierárquica nas aplicações CloudStack. Os hospedeiros são agrupados em grupos lógicos chamados clusters.
 										Este cluster pode ser um grupo de servidores XenServer ou um conjunto de servidores KVM.<br>
 										</p>
-										</div>
+									</div>
 
 										<br>
 										<br>
 
+									<div id = "armazenamento">
 										<h2>Armazenamento</h2>
 										<p>
 										CloudStack tem duas principais categorias de armazenamento, primário e secundário. Armazenamento primário é usado para fornecer discos para máquinas virtuais hóspedes e está associado ao o cluster do CloudStack Já o armazenamento secundário está associado a um setor, comum a todos os 
-										<a href="#" onclick="window.open('glosario.html#PoD', 'newwindow', 'width=400, height=300'); return false;">pontos de entrega (PoDs)</a>
+										<a href="#" onclick="window.open('glossario.html#PoD', 'newwindow', 'width=400, height=300'); return false;">pontos de entrega (PoDs)</a>
 										 no setor e é usado para armazenar templates, ISOs e snapshots dos volumes dos discos.
 										<br><br>
 										<b>Armazenamento primário <i>(Primary Storage)</i>:</b><br>
@@ -115,18 +124,18 @@
 										Este espaço de armazenamento é usado para armazenas os templates, imagens ISO e snapshots que podem ser usados para implementar infraestrutura IT usando CloudStack. Cada zona tem ao menos um armazenamento secundário que por sua vez é compartilhado entre todos os pontos de entrega nesta zona.<br>
 										CloudStack também oferece a funcionalidade de automaticamente replicar o armazendo secundário através das zonas de modo que haja tolerância a falha. Diferentemente do armazenamento primário, o armazenamento secundário utiliza apenas NFS (Network File System).<br>
 										O armazenamento secundário e as máquinas virituais a qual está servindo devem estar localizado na mesma zona e ser acessível por todos os hospedeiros.<br>
-										<br>
-										<br>
+										<a class="image centered"><img src="images/storage.png"></a>
 										<b>Volumes:</b>
 										Volumes são a unidade dee armazenamento básica do CloudStack. Todo espaço de armazenamento que é fornecido às instâncias hóspedes são dadas na forma de volumes. Estes volumes são criados nos servidores de armazenamento primário já descritos.<br>
 										O disco raiz das máqinas virtuais dos hóspedes recebe armazenamento na forma de volumes do armazenamento primário que contém todos os arquivos para inicializar o sistema operacional ou armazenamento adicional para guardar dados.<br>
 										Embora CloudStack não ofereça a funcionalidade de fazer backup do armazenamento primário é fornecida a opção de criar cópias dos volumes individuais na própria unidade de armazenamento primário usando snapshots.<br>
-
 										</p>
+									</div>
 
 										<br>
 										<br>
 
+									<div id = "gerenciamento">
 										<h2>Camada de Gerenciamento</h2>
 										<p>
 										<b>Servidor de Gerenciamento <i>(Management Server)</i>:</b><br>
@@ -148,26 +157,34 @@
 										<br>
 										<b>Gerenciador de Snapshot:</b><br>
 										Quando um usuário requer uma ação para criar uma snapshot ou qualquer outra operação baseada em snapshots, este componente lida com o pedido. Snapshots são utuilizadas para backupse restauração.
+										<a class="image centered"><img src="images/interface3.png"></a>
+										<i>Figura: Interface de Gerenciamento</i>
+
 										</p>
+									</div>
 
 										<br>
 										<br>
 
+									<div id = "kernel">
 										<h2>Kernel</h2>
 										<p>
 										O kernel, ou núcleo, é composto de diferentes componentes que executam tarefas em plano de fundo. É essencial na distribuição, integração e tratamento de tarefas.<br>
 										O núcleo distribui as tarefas entre diversos outros componentes do CloudStack, controla operações extensas das máquinas virtuais, sincroniza os recursos e banco de dados além de gerar eventos que são capturados por outros componentes.
 										</p>
+									</div>
 
 										<br>
 										<br>
 
+									<div id = "clouddb">
 										<h2>Cloud DB</h2>
 										<p>
 										É o banco de dados MySQL primário usado pelo servidor de gerenciamento para armazenar todas informações de configuração.<br>
 										CloudDB pode ser instalado tanto no mesmo servidor quanto em um servidor distinto.
 										Deste modo, CloudDB é um componente crucial para o funcionamento da aplicação CloudStack visto que contém informação de oferta, hosts, perfis, credenciais de contas, informação de configuração e rede, etc.
 										</p>
+									</div>
 									</article>
 
 
